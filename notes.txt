@@ -8,7 +8,9 @@ login -> create new app
 
 go to terminal root
 heroku login
-FROM DOCU:
+
+FROM DOCU - >go to site and copy this in deploy tab
+When you create heroku will guide you
 $ cd my-project/
 $ git init
 $ heroku git:remote -a sarmsdev-staff-tracker
@@ -29,9 +31,18 @@ node --version
     "node": "12.x"
   }
 
+git add .
+git commit -m "up"
+git push heroku master
+
+
+
 {
   "name": "mern-staff-tracker",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -43,7 +54,7 @@ node --version
     "server-install": "npm install",
     "install-all": "concurrently \"npm run client-install\" \"npm run server-install\"",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "heroku-postbuild": "cd client && run npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
