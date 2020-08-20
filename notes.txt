@@ -27,6 +27,7 @@ go to heroku
 -> settings -> paste the connection string
 
 node --version
+
 "engines": {
     "node": "12.x"
   }
@@ -34,7 +35,6 @@ node --version
 git add .
 git commit -m "up"
 git push heroku master
-
 
 
 {
