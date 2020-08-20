@@ -6,7 +6,6 @@ detete .gitignore
 go to heroku
 login -> create new app
 
-
 go to terminal root
 heroku login
 FROM DOCU:
@@ -14,7 +13,21 @@ $ cd my-project/
 $ git init
 $ heroku git:remote -a sarmsdev-staff-tracker
 
+git add .
+git commit -m "up"
 
+go to mongoatlas
+
+get your connection string
+mongodb+srv://<username>:<password>@cluster0.m6gfk.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+go to heroku
+-> settings -> paste the connection string
+
+node --version
+"engines": {
+    "node": "12.x"
+  }
 
 {
   "name": "mern-staff-tracker",
