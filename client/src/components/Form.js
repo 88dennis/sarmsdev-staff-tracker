@@ -7,7 +7,7 @@ function Form(props) {
     
       <div className="ui segment">
         <form onSubmit={props.handler}>
-          <h3>Staff Tracker</h3>
+          <h3>Staff Tracker - DevRus</h3>
           <h4>{props.isEditForm ? "Editing Employee" : "Add Employee"}</h4>
           <div className="ui form">
             <div className="two fields">

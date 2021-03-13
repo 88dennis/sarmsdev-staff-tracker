@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //routes
 const employee = require('./routes/employee');
